@@ -1,73 +1,67 @@
 package Model;
 
 public class Usuario {
-    //Atributos
-    private String nombreCompleto;
+
+    private String nombre;
     private String correoElectronico;
-    private String numeroDeTelefono;
-    private String contraseña;
+    private String contrasena;
+    private String numeroDeCelular;
     private int edad;
-    private String nombreDeUsuario;
     private boolean esAdmin;
 
-    // Constructor
-    public  Usuario(String nombreCompleto, String correoElectronico, String numeroDeTelefono,  String contraseña, int edad , String nombreDeUsuario, boolean esAdmin){
-        this.nombreCompleto = nombreCompleto;
+    public Usuario(String nombre, String correoElectronico, String contrasena, String numeroDeCelular, int edad, boolean esAdmin) {
+        this.nombre = nombre;
         this.correoElectronico = correoElectronico;
-        this.numeroDeTelefono = numeroDeTelefono;
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
+        this.numeroDeCelular = numeroDeCelular;
         this.edad = edad;
-        this.nombreDeUsuario = nombreDeUsuario;
         this.esAdmin = esAdmin;
     }
 
-    // Metodos get y set
-
-    public String getNombreCompleto() {
-        return nombreCompleto;
+    public String getNombre() {
+        return nombre;
     }
-    public void setNombreCompleto(String nombreCompleto) {
-        this.nombreCompleto = nombreCompleto;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getCorreoElectronico() {
         return correoElectronico;
     }
+
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
     }
 
-    public String getNumeroDeTelefono() {
-        return numeroDeTelefono;
-    }
-    public void setNumeroDeTelefono(String numeroDeTelefono) {
-        this.numeroDeTelefono = numeroDeTelefono;
+    public String getContrasena() {
+        return contrasena;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+
+    public String getNumeroDeCelular() {
+        return numeroDeCelular;
+    }
+
+    public void setNumeroDeCelular(String numeroDeCelular) {
+        this.numeroDeCelular = numeroDeCelular;
     }
 
     public int getEdad() {
         return edad;
     }
+
     public void setEdad(int edad) {
         this.edad = edad;
-    }
-
-    public String getNombreDeUsuario() {
-        return nombreDeUsuario;
-    }
-    public void setNombreDeUsuario(String nombreDeUsuario) {
-        this.nombreDeUsuario = nombreDeUsuario;
     }
 
     public boolean isEsAdmin() {
         return esAdmin;
     }
+
     public void setEsAdmin(boolean esAdmin) {
         this.esAdmin = esAdmin;
     }
@@ -75,14 +69,12 @@ public class Usuario {
     @Override
     public String toString() {
         return "Usuario{" +
-                "esAdmin=" + esAdmin +
-                ", nombreDeUsuario='" + nombreDeUsuario + '\'' +
-                ", edad=" + edad +
-                ", numeroDeTelefono='" + numeroDeTelefono + '\'' +
+                "nombre='" + nombre + '\'' +
                 ", correoElectronico='" + correoElectronico + '\'' +
-                ", nombreCompleto='" + nombreCompleto + '\'' +
+                ", numeroDeCelular='" + numeroDeCelular + '\'' +
+                ", edad=" + edad +
+                ", esAdmin=" + esAdmin +
                 '}';
     }
-
-
 }
+

@@ -18,17 +18,24 @@ public class GestorUsuarios {
     private HashMap<String, Usuario> administradores = new HashMap<>();
 
     public GestorUsuarios() {
-        administradores.put("andresv@gmail.com", new Usuario("Guillermo Avila", "guille13@gmail.com", "3123529714", "6969", 19, "Andres5025", true));
-        clientes.put("guille@gmail.com", new Usuario("guillermo avila", "guille@gmail.com", "321456987", "12345", 18, "guille29", false));
+        administradores.put("andresv@gmail.com", new Usuario("Andres Vargas", "andresv@gmail.com", "3123529714", "MaMeluco6922", 19,  true));
+        clientes.put("guille@gmail.com", new Usuario("guillermo avila", "guille@gmail.com", "321456987", "MaMeluco69", 18,  false));
     }
 
-    public void creacionUsuario(String nombre, String correo, String contrasena, String numeroDeCelular, int edad, boolean esAdmin) {
+    public void creacionUsuario(String nombre, String correo, String contrasena, String numeroDeCelular, int edad, String Admin) {
         if (administradores.containsKey(correo) || clientes.containsKey(correo)) {
             System.out.println("Este correo electrónico ya está registrado.");
             return;
         }
+        boolean esAdmin;
 
-        Usuario nuevoUsuario = new Usuario(nombre, correo, numeroDeCelular, contrasena, edad, nombre, esAdmin);
+        if (Admin.equals("true")){
+            esAdmin = true;
+        }else {
+            esAdmin = false;
+        }
+
+        Usuario nuevoUsuario = new Usuario(nombre, correo, contrasena, numeroDeCelular, edad, esAdmin);
         if (esAdmin) {
             administradores.put(correo, nuevoUsuario);
         } else {
@@ -43,7 +50,7 @@ public class GestorUsuarios {
         if (usuario == null) {
             usuario = clientes.get(correo);
         }
-        if (usuario != null && usuario.getContraseña().equals(contrasena)) {
+        if (usuario != null && usuario.getContrasena().equals(contrasena)) {
             return usuario;
         }
         return null;
@@ -56,9 +63,9 @@ public class GestorUsuarios {
         }
 
         if (usuario != null) {
-            usuario.setNombreCompleto(nombre);
-            usuario.setContraseña(contrasena);
-            usuario.setNumeroDeTelefono(numeroDeCelular);
+            usuario.setNombre(nombre);
+            usuario.setContrasena(contrasena);
+            usuario.setNumeroDeCelular(numeroDeCelular);
             usuario.setEdad(edad);
             System.out.println("Usuario actualizado exitosamente.");
         } else {
@@ -112,4 +119,6 @@ public class GestorUsuarios {
             System.out.println("Archivo usuarios.json no encontrado, inicializando datos por defecto.");
         }
     }
+
+
 }

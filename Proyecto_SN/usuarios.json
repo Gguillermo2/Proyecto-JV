@@ -1,32 +1,29 @@
 {
   "administradores": {
     "nicolas@gmail.com": {
-      "nombreCompleto": "nicolas avila",
+      "nombre": "Juan Orjuela",
       "correoElectronico": "nicolas@gmail.com",
-      "numeroDeTelefono": "12345",
-      "contraseña": "123456",
-      "edad": 21,
-      "nombreDeUsuario": "nicolas orjuela",
+      "contrasena": "ojos_2011",
+      "numeroDeCelular": "3134309641",
+      "edad": 18,
       "esAdmin": true
     },
-    "andresv@gmail.com": {
-      "nombreCompleto": "Guillermo Avila",
-      "correoElectronico": "guille13@gmail.com",
-      "numeroDeTelefono": "3123529714",
-      "contraseña": "6969",
-      "edad": 19,
-      "nombreDeUsuario": "Andres5025",
+    "a@gmail.com": {
+      "nombre": "Andres",
+      "correoElectronico": "a@gmail.com",
+      "contrasena": "1234",
+      "numeroDeCelular": "3133313",
+      "edad": 18,
       "esAdmin": true
     }
   },
   "clientes": {
-    "guillegmail.com": {
-      "nombreCompleto": "guillermo",
-      "correoElectronico": "guillegmail.com",
-      "numeroDeTelefono": "312654",
-      "contraseña": "1234",
-      "edad": 21,
-      "nombreDeUsuario": "guillermo",
+    "j@gmail.com": {
+      "nombre": "juan",
+      "correoElectronico": "j@gmail.com",
+      "contrasena": "313313",
+      "numeroDeCelular": "1234",
+      "edad": 18,
       "esAdmin": false
     }
   }
