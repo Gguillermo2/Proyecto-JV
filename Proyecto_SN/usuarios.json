@@ -1,0 +1,33 @@
+{
+  "administradores": {
+    "nicolas@gmail.com": {
+      "nombreCompleto": "nicolas avila",
+      "correoElectronico": "nicolas@gmail.com",
+      "numeroDeTelefono": "12345",
+      "contraseña": "123456",
+      "edad": 21,
+      "nombreDeUsuario": "nicolas orjuela",
+      "esAdmin": true
+    },
+    "andresv@gmail.com": {
+      "nombreCompleto": "Guillermo Avila",
+      "correoElectronico": "guille13@gmail.com",
+      "numeroDeTelefono": "3123529714",
+      "contraseña": "6969",
+      "edad": 19,
+      "nombreDeUsuario": "Andres5025",
+      "esAdmin": true
+    }
+  },
+  "clientes": {
+    "guillegmail.com": {
+      "nombreCompleto": "guillermo",
+      "correoElectronico": "guillegmail.com",
+      "numeroDeTelefono": "312654",
+      "contraseña": "1234",
+      "edad": 21,
+      "nombreDeUsuario": "guillermo",
+      "esAdmin": false
+    }
+  }
+}
